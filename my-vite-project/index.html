@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Importo FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!-- Importo Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+  <title>circus</title>
+</head>
+
+<header>
+  <div class="promo-banner">
+    Ottieni il tuo primo corso con uno sconto del 50%. L'offerta è valida solo per i primi 50 studenti. <a href="#">Registrati adesso</a>
+  </div>
+  <div class="container d-flex justify-content-between align-items-center">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.png" alt="Logo" width="80" height="40">
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Corsi</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Eventi</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Registrati</a></li>
+    </ul>
+    <div class="nav-icons">
+      <i class="fa fa-user"></i>
+      <i class="fa fa-heart"></i>
+      <i class="fa fa-shopping-cart"></i>
+      <i class="fa fa-search"></i>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/images/billboard-bg.png" class="card-img" alt="">
+    <div class="card-img-overlay">
+      <h5>CODECIRCUS</h5>
+      <p class="card-text">Immergiti nel divertimento del codice, dove ogni byte è una gioia!</p>
+      <input class="form-control" type="search" placeholder="Cosa vuoi imparare oggi?">
+    </div>
+    <img class="circus" src="/images/billboard-img.png" alt="Clown che usa il computer">
+  </div>
+</header>
+
+<section class="stats">
+  <div class="container d-flex justify-content-around">
+    <div class="stat-card">
+      <h3>100+</h3>
+      <p>Maghi del codice</p>
+    </div>
+    <div class="stat-card">
+      <h3>500+</h3>
+      <p>Corsi stravaganti</p>
+    </div>
+    <div class="stat-card">
+      <h3>GRATIS</h3>
+      <p>Una pacca sulla spalla</p>
+    </div>
+    <div class="stat-card">
+      <h3>2,000+</h3>
+      <p>Persone ci sono cascate</p>
+    </div>
+  </div>
+</section>
+
+<section class="about-us">
+  <div class="container d-flex align-items-center">
+    <div class="about-image">
+      <img src="/images/about-img.jpg" alt="Clown nel parco">
+    </div>
+    <div class="about-text">
+      <span>Scopri di più su di noi</span>
+      <h2>Chi Siamo</h2>
+      <p>Benvenuti nel nostro magico mondo dove la programmazione incontra il divertimento sfrenato! Offriamo corsi unici e stravaganti, guidati da istruttori eccentrici che trasformano ogni lezione in un'avventura indimenticabile. Unisciti a noi per scoprire il lato più fantasioso del coding!</p>
+      <ul>
+        <li>Esperti di programmazione che rendono ogni lezione uno spettacolo creativo.</li>
+        <li> Corsi divertenti e coinvolgenti che trasformano l'apprendimento in un'avventura.</li>
+        <li>Connettiti con appassionati di coding di tutto il mondo per un'esperienza unica e divertente.</li>
+      </ul>
+      <button class="btn btn-success">SCOPRI DI PIÙ</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav').classList.toggle('active');
+  }
+</script>
+
+
+</html>
+
+
+
+
+
+<div id="app"></div>
+<script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
